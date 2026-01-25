@@ -105,7 +105,7 @@ if page == "📊 Data Overview":
     with col1:
         st.metric("Total Records", f"{len(df):,}")
     with col2:
-        st.metric("Features", f"{df.shape[1] - 1}")
+        st.metric("Features", f"{df.shape[1] }")
     with col3:
         purchase_rate = (df['Revenue'].sum() / len(df)) * 100
         st.metric("Purchase Rate", f"{purchase_rate:.1f}%")
